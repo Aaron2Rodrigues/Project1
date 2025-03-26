@@ -27,7 +27,7 @@ list_of_files = [
     "setup.py",
     "research/research.ipynb",
     "templates/index.html",
-    "README.md",
+    "README.md"
 ]
 
 for filepath in list_of_files:

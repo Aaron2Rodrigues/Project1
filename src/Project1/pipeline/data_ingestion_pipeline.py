@@ -4,7 +4,7 @@ from src.Project1 import logger
 
 STAGE_NAME = "Data Ingestion Stage"
 
-class  DataIngestionTrainigPipeline:
+class  DataIngestionTrainingPipeline:
     def __init__(self):
         pass
 
@@ -18,7 +18,7 @@ class  DataIngestionTrainigPipeline:
 if __name__ == '__main__':
     try:
         logger.info(f">>>>>>>>>>> STAGE {STAGE_NAME} STARTED <<<<<<<<<<")
-        obj = DataIngestionTrainigPipeline()
+        obj = DataIngestionTraingPipeline()
         obj.initiate_data_ingestion()
         logger.info(f">>>>>>> STAGE {STAGE_NAME} COMPLETED <<<<<<<<")
     except Exception as e:

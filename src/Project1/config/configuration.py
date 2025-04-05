@@ -1,6 +1,6 @@
 from src.Project1.constants import *
 from src.Project1.utils.common import read_yaml, create_dirs
-from src.Project1.entity.entity_config import (DataIngestionconfig,DataValidationConfig)
+from src.Project1.entity.entity_config import (DataIngestionconfig,DataValidationConfig,DataTransformationConfig )
 
 class ConfigurationManager:
     def __init__(self,
@@ -38,3 +38,12 @@ class ConfigurationManager:
             all_schema = schema,    
         )
         return data_validation_config
+    
+    def get_data_transformation_config(self) -> DataTransformationConfig:
+        config  = self.config.data_transformation
+        create_dirs([config.root_dir])
+        data_transformation_config = DataTransformationConfig(
+            root_dir = config.root_dir,
+            data_path = config.data_path
+        )
+        return data_transformation_config

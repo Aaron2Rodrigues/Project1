@@ -29,10 +29,10 @@ except Exception as e:
 STAGE_NAME = "Data Transformation Stage"
 
 try:
-        logger.info(f">>>>>>>>>>> STAGE {STAGE_NAME} STARTED <<<<<<<<<<\n\nx===================================x")
+        logger.info(f">>>>>>>>>>> STAGE {STAGE_NAME} STARTED <<<<<<<<<<\n\n\nx===================================x")
         obj = DataTransormationTrainingPipeline()
         obj.initiate_data_transformation()
-        logger.info(f">>>>>>> STAGE {STAGE_NAME} COMPLETED <<<<<<<<\n\nx===================================x")
+        logger.info(f">>>>>>> STAGE {STAGE_NAME} COMPLETED <<<<<<<<\n\n\nx===================================x")
 except Exception as e:
         logger.exception(e)
         raise e
@@ -40,20 +40,20 @@ except Exception as e:
 STAGE_NAME = "Model Trainer Stage"
 
 try:  
-      logger.info(f">>>>>>>>>>> STAGE {STAGE_NAME} STARTED <<<<<<<<<<\n\nx===================================x")
+      logger.info(f">>>>>>>>>>> STAGE {STAGE_NAME} STARTED <<<<<<<<<<\n\n\nx===================================x")
       obj = ModelTrainerPipeline()
       obj.initiate_model_training()
-      logger.info(f">>>>>>> STAGE {STAGE_NAME} COMPLETED <<<<<<<<\n\nx===================================x")
+      logger.info(f">>>>>>> STAGE {STAGE_NAME} COMPLETED <<<<<<<<\n\n\nx===================================x")
 except Exception as e:
       logger.exception(e)
       raise e
 
 STAGE_NAME = "Model Evaluation Stage"
 try:
-        logger.info(f">>>>>>>>>>> STAGE {STAGE_NAME} STARTED <<<<<<<<<<\n\nx===================================x")
+        logger.info(f">>>>>>>>>>> STAGE {STAGE_NAME} STARTED <<<<<<<<<<\n\n\nx===================================x")
         obj = ModelEvaluationPipeline()
         obj.initiate_model_evaluation()
-        logger.info(f">>>>>>> STAGE {STAGE_NAME} COMPLETED <<<<<<<<\n\nx===================================x")
+        logger.info(f">>>>>>> STAGE {STAGE_NAME} COMPLETED <<<<<<<<\n\n\nx===================================x")
 except Exception as e:
         logger.exception(e)
         raise e 

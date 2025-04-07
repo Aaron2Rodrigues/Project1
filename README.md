@@ -18,3 +18,10 @@
 6. Update the components
 7. Update the pipeline
 8. Update the main.py
+
+![Workflow](assets/diagram1.png)
+![Workflow](assets/output1.png)
+![Workflow](assets/output4.png)
+![Workflow](assets/output2.png)
+![Workflow](assets/output3.png)
+![Workflow](assets/dagshub-output.png)
